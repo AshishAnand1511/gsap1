@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: gilroy;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+#mmain {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+#main {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+}
+#nav {
+  height: 5rem;
+  width: 100%;
+  /* background-color: red; */
+}
+#nav > img {
+  height: 5rem;
+  width: 21rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+#nav2 {
+  display: flex;
+  width: 40rem;
+  padding: 1rem;
+  justify-content: space-around;
+  /* background-color: grey; */
+}
+#nav3 {
+  align-items: center;
+  display: flex;
+  width: 15rem;
+  padding: 1rem;
+  justify-content: space-around;
+  /* background-color: grey; */
+}
+#nav2 h3 {
+  cursor: pointer;
+  transition: all linear 0.5s;
+}
+#nav2 h3:hover {
+  color: salmon;
+  transition: all linear 0.5s;
+}
+#nav3 h4 {
+  cursor: pointer;
+  transition: all linear 0.5s;
+}
+#nav3 h4:hover {
+  color: salmon;
+  transition: all linear 0.5s;
+}
+#nav3 > button {
+  height: 100%;
+  padding: 1rem 1rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.2rem;
+  transition: all linear 0.5s;
+}
+#nav3 > button:hover {
+  background-color: salmon;
+  transition: all linear 0.5s;
+}
+#main > h1 {
+  z-index: 9;
+  margin-top: 5rem;
+  /* background-color: grey; */
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+#main > h1:nth-child(3) {
+  /* background-color: grey; */
+  display: flex;
+  margin-top: 0;
+  align-items: center;
+  justify-content: center;
+}
+#main > h1:nth-child(4) {
+  margin-top: 0;
+}
+#main > h1 span {
+  background-color: brown;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  margin: 0rem 2rem;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  z-index: 99;
+  border-radius: 10rem;
+  transition: all linear 0.5s;
+}
+#main > h1 span:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all linear 0.5s;
+}
+#img1 {
+  height: 12rem;
+  left: 7rem;
+  top: 10rem;
+  border-radius: 2rem;
+  position: absolute;
+}
+#img2 {
+  height: 15rem;
+  top: 5rem;
+  right: 30rem;
+  position: absolute;
+  border-radius: 2rem;
+}
+#img3 {
+  position: absolute;
+  bottom: 1rem;
+  height: 20rem;
+  right: 5rem;
+  border-radius: 2rem;
+}
+#img4 {
+  position: absolute;
+  bottom: 3rem;
+  height: 15rem;
+  left: 15rem;
+  border-radius: 2rem;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    padding-right: 1rem;
+    height: 5rem;
+    width: 100%;
+    /* background-color: red; */
+  }
+  #nav > img {
+    height: 1.6rem;
+    /* width: 19rem; */
+    object-fit: cover;
+    cursor: pointer;
+  }
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  #nav2 {
+    display: flex;
+    width: 40rem;
+    padding: 1rem;
+    justify-content: space-between;
+    /* background-color: grey; */
+  }
+  #nav3 {
+    align-items: center;
+    display: flex;
+    width: 20rem;
+    padding: 0;
+    gap: .2rem;
+    justify-content: space-between;
+    /* background-color: grey; */
+  }
+  #nav2 h3 {
+    font-size: 0.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: all linear 0.5s;
+  }
+  #nav2 h3:hover {
+    color: salmon;
+    transition: all linear 0.5s;
+  }
+  #nav3 h4 {
+    white-space: nowrap;
+    font-size: 0.5rem;
+    cursor: pointer;
+    transition: all linear 0.5s;
+  }
+  #nav3 h4:hover {
+    color: salmon;
+    transition: all linear 0.5s;
+  }
+  #nav3 > button {
+    height: 50%;
+    padding: .3rem .3rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.2rem;
+    transition: all linear 0.5s;
+  }
+  #nav3 > button:hover {
+    background-color: salmon;
+    transition: all linear 0.5s;
+  }
+  #main > h1 {
+    z-index: 9;
+    margin-top: 15rem;
+    /* background-color: grey; */
+    font-size: 3rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  #main > h1:nth-child(3) {
+    /* background-color: grey; */
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  #main > h1:nth-child(4) {
+    margin-top: 0;
+  }
+  #main > h1 span {
+    background-color: brown;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    padding: 1rem 1.5rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+    z-index: 99;
+    border-radius: 10rem;
+    transition: all linear 0.5s;
+  }
+  #main > h1 span:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all linear 0.5s;
+  }
+  #img1 {
+    height: 12rem;
+    left: 2rem;
+    top: 7rem;
+    border-radius: 2rem;
+    position: absolute;
+  }
+  #img2 {
+    height: 15rem;
+    top: 15rem;
+    right: 1rem;
+    position: absolute;
+    border-radius: 2rem;
+  }
+  #img3 {
+    position: absolute;
+    bottom: .5rem;
+    height: 15rem;
+    right: 2rem;
+    border-radius: 2rem;
+  }
+  #img4 {
+    position: absolute;
+    bottom: 15rem;
+    height: 8rem;
+    left: 1rem;
+    border-radius: 2rem;
+  }
+}
